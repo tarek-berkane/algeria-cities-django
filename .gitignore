@@ -2,4 +2,5 @@ my_env/
 build/
 dist/
 algeria_cities.egg-info/
+django_algeria_cities.egg-info/
 __pycache__/**
