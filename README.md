@@ -1,30 +1,26 @@
-============
-django-polls
-============
+# Algeria cities django package
+Django package provides a complete list of all administrative provinces and cities in Algeria.
 
-django-polls is a Django app to conduct web-based polls. For each
-question, visitors can choose between a fixed number of answers.
+## Quick start
+### Installation
+Install the package using pip:
+```shell
+    pip install django-algeria-cities
+```
+### Configuration
 
-Detailed documentation is in the "docs" directory.
-
-============
-Quick start
-============
-
-1. Add "polls" to your INSTALLED_APPS setting like this::
-
+1. Add "algeria_cities" to your INSTALLED_APPS in settings.py:
+```py
     INSTALLED_APPS = [
         ...,
-        "django_polls",
+        "algeria_cities",
     ]
+```
 
+2. Run migrations to create the necessary database tables:
+```shell
+python manage.py migrate algeria_cities
+```
 
-2. Include the polls URLconf in your project urls.py like this::
-
-    path("polls/", include("django_polls.urls")),
-
-3. Run ``python manage.py migrate`` to create the models.
-
-4. Start the development server and visit the admin to create a poll.
-
-5. Visit the ``/polls/`` URL to participate in the poll.
+## Credit
+The data used in this package was sourced from [algeria-cities](https://github.com/othmanus/algeria-cities). Special thanks to the contributors of that project for their efforts in compiling and maintaining the dataset.
